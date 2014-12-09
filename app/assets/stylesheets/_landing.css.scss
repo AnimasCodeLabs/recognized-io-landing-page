@@ -1,14 +1,107 @@
+$gray: #999999;
+$light-gray: #EFEFEF;
+$green: #579B00;
+$orange: #FF9900;
+$blue: #0066A3;
+
 .header {
+  height: 600px;
+  background-color: $blue;
+//  color: white;
+
+  Recognized-logo-with-white-text {
+    @include retina-image(header-logo, 150px 51px, $asset-pipeline: true);
+  }
+
+  h1  {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  h3  {
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  }
 }
 
 .common-problem {
+  color: $gray;
+  text-align: center;
+  height: 385px;
+  padding-right: 200px;
+  padding-left: 200px;
+
+  h3  {
+    color: $green;
+    border-bottom: 1px solid $gray;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  h4  {
+    color: $gray;
+    font-size: 32px;
+    font-weight: 300;
+  }
 }
 
 .trusted-solution {
+  background-color: $light-gray;
+  text-align: center;
+  height: 500px;
+  padding-right: 200px;
+  padding-left: 200px;
+
+  h3  {
+    color: $green;
+    font-size: 40px;
+    font-weight: 300;
+    border-bottom: 1px solid $gray;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  h4  {
+    color: $blue;
+    font-size: 32px;
+    margin-top: 30px;
+    font-weight: 300;
+
+    .company-name {
+      color: $green;
+    }
+  }
+
+  h5  {
+    padding-top: 35px;
+  }
+}
+
+.demo-space {
+  height: 400px;
 }
 
 .a-try  {
+  background-color: $orange;
+  text-align: center;
+  height: 180px;
+
+  h3  {
+    color: white;
+    font-size: 40px;
+    padding-top: 40px;
+
+  }
 }
 
 .footer {
+  background-color: $light-gray;
+  height: 140px;
 }

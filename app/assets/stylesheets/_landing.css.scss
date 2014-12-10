@@ -35,6 +35,10 @@ $blue: #0066A3;
     padding-left: 325px;
     font-size: 24px;
   }
+
+  .sign-up  {
+
+  }
 }
 
 .common-problem {
@@ -64,39 +68,59 @@ $blue: #0066A3;
 .trusted-solution {
   background-color: $light-gray;
   text-align: center;
-  height: 500px;
-  padding-right: 200px;
-  padding-left: 200px;
 
-  h3  {
-    color: $green;
-    font-size: 40px;
-    font-weight: 300;
-    border-bottom: 1px solid $gray;
-    padding-top: 50px;
-    padding-bottom: 25px;
-  }
+  .solution-text  {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
 
-  h4  {
-    color: $blue;
-    font-size: 32px;
-    margin-top: 30px;
-    font-weight: 300;
+    h3, h4, p{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
-    .company-name {
+    h3  {
       color: $green;
+      font-size: 40px;
+      font-weight: 300;
+      border-bottom: 1px solid $gray;
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
+
+    h4  {
+      color: $blue;
+      font-size: 32px;
+      margin-top: 30px;
+      font-weight: 300;
+      margin-bottom: 30px;
+
+      .company-name {
+        color: $green;
+      }
     }
   }
 
-  h5  {
-    padding-top: 35px;
-    color: $light-gray;
-    font-weight: bold;
-  }
-}
+  .demo-space {
+    text-align: center;
+    background-color: white;
+    height: 450px;
 
-.demo-space {
-  height: 400px;
+    .demo-pic-border{
+      background-color: #EDF1F1;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      position: relative;
+      top: -160px;
+    }
+
+    .demo-pic  {
+      border-radius: 15px;
+      display: block;
+    }
+  }
 }
 
 .a-try  {
@@ -108,17 +132,39 @@ $blue: #0066A3;
     color: white;
     font-size: 40px;
     padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .sign-up  {
   }
 }
 
 .footer {
   background-color: $light-gray;
-  height: 135px;
+  text-align: center;
+  position: relative;
+  border-top: 10px solid white;
 
   .copyright {
     font-size: 12px;
-    margin-left: 30px;
-    margin-top: 10px;
-    padding-top: 70px;
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+  }
+
+  .logo-container  {
+    background-color: white;
+    display: block;
+    @include size(131px 139px);
+    padding: 40px 45px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .logo  {
+      @include retina-image(logonotext, 49px 51px, $asset-pipeline: true);
+      @include size(49px 51px);
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

@@ -6,32 +6,41 @@ $blue: #0066A3;
 
 .header {
   height: 600px;
-  background-color: $blue;
-//  color: white;
+  background-color: shade($blue, 45%);
+  color: white;
+  background-image: asset-url("header-img.jpg");
+  background-size: cover;
 
-  Recognized-logo-with-white-text {
-    @include retina-image(header-logo, 150px 51px, $asset-pipeline: true);
+  .logo {
+    @include hide-text;
+    @include retina-image(logowithtext, 242px 45px, $asset-pipeline: true);
+    @include size(242px 45px);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 30px;
   }
 
-  h1  {
+  h2  {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 145px;
     padding-bottom: 40px;
     font-size: 60px;
     font-weight: 300;
   }
 
   h3  {
-  text-align: center;
-  padding-right: 200px;
-  padding-left: 200px;
+    text-align: center;
+    padding-right: 325px;
+    padding-left: 325px;
+    font-size: 24px;
   }
 }
 
 .common-problem {
   color: $gray;
   text-align: center;
-  height: 385px;
+  height: 380px;
   padding-right: 200px;
   padding-left: 200px;
 
@@ -81,6 +90,8 @@ $blue: #0066A3;
 
   h5  {
     padding-top: 35px;
+    color: $light-gray;
+    font-weight: bold;
   }
 }
 
@@ -97,11 +108,17 @@ $blue: #0066A3;
     color: white;
     font-size: 40px;
     padding-top: 40px;
-
   }
 }
 
 .footer {
   background-color: $light-gray;
-  height: 140px;
+  height: 135px;
+
+  .copyright {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-top: 70px;
+  }
 }

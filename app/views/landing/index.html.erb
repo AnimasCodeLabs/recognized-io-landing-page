@@ -4,11 +4,16 @@
     <h1>Recognized.io</h1>
     <% end %>
   </div>
-    <h2>Revenue Recognition for Stripe</h2>
-    <h3>If your SaaS company is using subscription billing, you are most likely
-      over reporting your revenue. Find out how to properly recognize your revenue
-      by signing up for early access.</h3>
-  <div>SIGN-UP GOES HERE Kinda Sorta</div>
+    <div class="banner-text">
+      <h2>Revenue Recognition for <%= image_tag "stripe-logo.png", class: "stripe-logo"%></h2>
+      <h3>If your SaaS company is using subscription billing, you are most likely
+        over reporting your revenue. Find out how to properly recognize your revenue
+        by signing up for early access.</h3>
+        <form class="sign-up">
+          <input type="email" class="email" placeholder="Email"></input>
+          <button>SIGN UP</button>
+        </form>
+    </div>
 </header>
 
 <section class="common-problem">
@@ -25,8 +30,10 @@
     <h3>A Trusted Solution</h3>
     <h4>By simply connecting your Stripe and QuickBooks accounts to <span class="company-name">Recognized.io</span>,
       you will be able to fully automate your revenue accounting.</h4>
-    <p>You will have a fully automated solution to deal with complicated
-      events such as trials, discounts, and plan changes.</p>
+      <div class="trusted-lower-text">
+        <p>You will have a fully automated solution to deal with complicated
+          events such as trials, discounts, and plan changes.</p>
+      </div>
   </div>
 
   <div class="demo-space">

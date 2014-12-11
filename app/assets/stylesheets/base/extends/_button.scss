@@ -1,9 +1,10 @@
 $green: #579A00;
+$dark-green: #477c01;
 
 %button {
   -webkit-font-smoothing: antialiased;
   background-color: $green;
-  border-radius: $base-border-radius;
+  border-radius: 0px;
   color: white;
   display: inline-block;
   font-size: $base-font-size;
@@ -13,7 +14,7 @@ $green: #579A00;
   text-decoration: none;
 
   &:hover {
-    background-color: $hover-button-color;
+    background-color: $dark-green;
     color: white;
   }
 

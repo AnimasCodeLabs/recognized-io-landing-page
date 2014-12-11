@@ -10,6 +10,7 @@ $blue: #0066A3;
   color: white;
   background-image: asset-url("header-img.jpg");
   background-size: cover;
+  padding: 0 30px;
 
   .logo {
     @include hide-text;
@@ -45,6 +46,7 @@ $blue: #0066A3;
     }
 
     .sign-up  {
+      padding-bottom: 40px;
 
       .email  {
         display: inline;
@@ -62,27 +64,31 @@ $blue: #0066A3;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
   color: $gray;
-  text-align: center;
-  height: 380px;
-  padding-right: 200px;
-  padding-left: 200px;
+  padding: 0 30px;
 
-  h3  {
-    color: $green;
-    border-bottom: 1px solid $gray;
-    padding-top: 70px;
-    padding-bottom: 25px;
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-weight: 300;
-  }
+  .common-problem-text {
+    max-width: 960px;
+    padding-bottom: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
-  h4  {
-    color: $gray;
-    font-size: 32px;
-    font-weight: 300;
+    h3  {
+      color: $green;
+      border-bottom: 1px solid $gray;
+      padding-top: 60px;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    h4  {
+      color: $gray;
+      font-size: 32px;
+      font-weight: 300;
+    }
   }
 }
 
@@ -96,6 +102,7 @@ $blue: #0066A3;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
     padding-bottom: 200px;
 
     h3, h4, p{
@@ -139,6 +146,7 @@ $blue: #0066A3;
     text-align: center;
     background-color: white;
     height: 450px;
+    padding: 0 30px;
 
     .demo-pic-border{
       background-color: #EDF1F1;
@@ -159,7 +167,7 @@ $blue: #0066A3;
 .a-try  {
   background-color: $orange;
   text-align: center;
-  height: 180px;
+  padding: 0 30px;
 
   h3  {
     color: white;
@@ -169,6 +177,7 @@ $blue: #0066A3;
   }
 
   .sign-up  {
+    padding-bottom: 40px;
 
     .email  {
       display: inline;

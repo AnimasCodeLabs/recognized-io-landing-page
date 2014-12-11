@@ -228,6 +228,10 @@ $blue: #0066A3;
     position: absolute;
     left: 30px;
     bottom: 40px;
+
+    @include media($break-medium) {
+      display: none;
+    }
   }
 
   .logo-container  {

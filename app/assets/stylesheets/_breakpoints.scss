@@ -1,0 +1,7 @@
+$break-xxsmall: new-breakpoint(max-width 460px);
+$break-xsmall: new-breakpoint(max-width 500px);
+$break-small: new-breakpoint(max-width 550px);
+$break-small-medium: new-breakpoint(max-width 630px);
+$break-medium: new-breakpoint(max-width 750px);
+$break-large: new-breakpoint(max-width 800px);
+$break-xlarge: new-breakpoint(max-width 950px);

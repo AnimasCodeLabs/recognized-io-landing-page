@@ -161,6 +161,34 @@ $blue: #0066A3;
       border-radius: 15px;
       display: block;
     }
+
+    @include media($break-xlarge) {
+      height: 350px;
+    }
+
+    @include media($break-large) {
+      height: 300px;
+    }
+
+    @include media($break-medium) {
+      height: 250px;
+    }
+
+    @include media($break-small-medium) {
+      height: 170px;
+    }
+
+    @include media($break-small) {
+      height: 110px;
+    }
+
+    @include media($break-xsmall) {
+      height: 110px;
+    }
+
+    @include media($break-xxsmall) {
+      height: 30px;
+    }
   }
 }
 

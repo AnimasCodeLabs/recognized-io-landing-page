@@ -102,6 +102,11 @@ $blue: #0066A3;
       font-size: 32px;
       font-weight: 300;
     }
+
+    @include media($break-xxsmall) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 }
 
@@ -153,6 +158,11 @@ $blue: #0066A3;
       margin-right: auto;
       max-width: 750px;
     }
+
+    @include media($break-xxsmall) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 
   .demo-space {
@@ -197,6 +207,9 @@ $blue: #0066A3;
 
     @include media($break-xsmall) {
       height: 110px;
+      padding-left: 5px;
+      padding-right: 5px;
+
     }
 
     @include media($break-xxsmall) {

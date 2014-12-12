@@ -41,6 +41,10 @@ $blue: #0066A3;
       font-size: 60px;
       font-weight: 300;
 
+      @include media($break-large) {
+        padding-top: 100px;
+      }
+
       .stripe-logo {
         display: inline;
         position: relative;

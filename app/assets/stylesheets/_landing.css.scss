@@ -11,14 +11,7 @@ $blue: #0066A3;
   background-image: asset-url("header-img.jpg");
   background-size: cover;
   padding: 0 30px;
-
-    @include media($break-small) {
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      background-position: -275px;
-    }
+  background-position: 27% 50%;
 
   .logo {
     @include hide-text;

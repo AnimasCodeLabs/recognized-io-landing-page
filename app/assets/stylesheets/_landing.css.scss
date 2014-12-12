@@ -14,8 +14,8 @@ $blue: #0066A3;
 
   .logo {
     @include hide-text;
-    @include retina-image(logowithtext, 242px 45px, $asset-pipeline: true);
-    @include size(242px 45px);
+    @include retina-image(logowithtext, 260px 45px, $asset-pipeline: true);
+    @include size(260px 45px);
     background-repeat: no-repeat;
     position: absolute;
     top: 30px;

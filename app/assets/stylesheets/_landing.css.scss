@@ -12,6 +12,14 @@ $blue: #0066A3;
   background-size: cover;
   padding: 0 30px;
 
+    @include media($break-small) {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      background-position: -275px;
+    }
+
   .logo {
     @include hide-text;
     @include retina-image(logowithtext, 260px 45px, $asset-pipeline: true);

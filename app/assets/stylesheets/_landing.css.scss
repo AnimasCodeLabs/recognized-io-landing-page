@@ -219,6 +219,7 @@ $blue: #0066A3;
 
     @include media($break-xxsmall) {
       height: 30px;
+      padding-bottom: 90px;
     }
   }
 }

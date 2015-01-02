@@ -61,15 +61,12 @@ $blue: #0066A3;
     .beta-button  {
       @extend %button;
       margin-top: 60px;
+      margin-bottom: 60px;
       font-size: 18px;
-
-      @include media($break-large) {
-        padding-bottom: 60px;
-      }
+      border-radius: 3px;
 
       @include media($break-xsmall) {
         font-size: 14px;
-        padding-bottom: 60px;
       }
     }
   }
@@ -239,8 +236,10 @@ $blue: #0066A3;
   }
 
   .try-form  {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    border-radius: 3px;
   }
 
   .submit-button  {
@@ -252,7 +251,7 @@ $blue: #0066A3;
   background-color: $light-gray;
   text-align: center;
   position: relative;
-//  border-top: 10px solid white;
+  border-top: 10px solid white;
 
   .copyright {
     font-size: 12px;

@@ -229,25 +229,22 @@ $blue: #0066A3;
 .a-try  {
   background-color: $orange;
   text-align: center;
-  padding: 0 30px;
+  padding: 40px;
 
   h3  {
     color: white;
     font-size: 40px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
-  .sign-up  {
-    padding-bottom: 40px;
+  .try-form  {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
 
-    .email  {
-      display: inline;
-      max-width: 600px;
-      padding-left: 15px;
-      margin-right: 10px;
-      padding-bottom: 11px;
-    }
+  .submit-button  {
+    padding-top: 20px;
   }
 }
 
@@ -255,7 +252,7 @@ $blue: #0066A3;
   background-color: $light-gray;
   text-align: center;
   position: relative;
-  border-top: 10px solid white;
+//  border-top: 10px solid white;
 
   .copyright {
     font-size: 12px;

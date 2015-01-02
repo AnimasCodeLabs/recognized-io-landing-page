@@ -36,6 +36,7 @@ $blue: #0066A3;
     margin-left: auto;
     margin-right: auto;
 
+
     h2  {
       padding-top: 200px;
       padding-bottom: 40px;
@@ -57,17 +58,18 @@ $blue: #0066A3;
       font-size: 24px;
     }
 
-    .sign-up  {
-      padding-bottom: 40px;
+    .beta-button  {
+      @extend %button;
+      margin-top: 60px;
+      font-size: 18px;
 
-      .email  {
-        display: inline;
-        max-width: 550px;
-        margin-top: 40px;
-        padding-left: 15px;
-        margin-right: 10px;
-        padding-bottom: 11px;
-        color: black;
+      @include media($break-large) {
+        padding-bottom: 60px;
+      }
+
+      @include media($break-xsmall) {
+        font-size: 14px;
+        padding-bottom: 60px;
       }
     }
   }

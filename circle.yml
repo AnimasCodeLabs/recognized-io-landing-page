@@ -1,4 +1,5 @@
 deployment:
   production:
     branch: master
-    heroku: recognized-landing
+    heroku:
+      appname: recognized-landing

@@ -1,16 +1,16 @@
 <header class="header">
   <div class="logo">
     <%= link_to root_path do %>
-    <h1>Recognized.io</h1>
+      <h1>Recognized.io</h1>
     <% end %>
   </div>
-    <div class="banner-text">
-      <h2>Revenue Recognition for <%= image_tag "stripe-logo.png", class: "stripe-logo"%></h2>
-      <h3>If your SaaS company is using subscription billing, you are most likely
-        over reporting your revenue. Find out how to properly recognize your revenue
-        by signing up for early access.</h3>
-      <a class="beta-button" href="#signup">Let me know when the Beta version is ready!</a>
-    </div>
+  <div class="banner-text">
+    <h2>Revenue Recognition for <%= image_tag "stripe-logo.png", class: "stripe-logo"%></h2>
+    <h3>If your SaaS company is using subscription billing, you are most likely
+      over reporting your revenue. Find out how to properly recognize your revenue
+      by signing up for early access.</h3>
+    <a class="beta-button" href="#signup">Sign up for the Private Beta!</a>
+  </div>
 </header>
 
 <section class="common-problem">
@@ -29,10 +29,10 @@
     <h3>A Trusted Solution</h3>
     <h4>By simply connecting your Stripe and QuickBooks accounts to <span class="company-name">Recognized.io</span>,
       you will be able to fully automate your revenue accounting.</h4>
-      <div class="trusted-lower-text">
-        <p>You will have a fully automated solution to deal with complicated
-          events such as trials, discounts, and plan changes.</p>
-      </div>
+    <div class="trusted-lower-text">
+      <p>You will have a fully automated solution to deal with complicated
+        events such as trials, discounts, and plan changes.</p>
+    </div>
   </div>
 
   <div class="demo-space">
@@ -46,34 +46,35 @@
   <form id="beta-form" accept-charset="UTF-8" action="https://formkeep.com/f/80602264b68e" method="POST">
     <!-- <form id="beta-form" accept-charset="UTF-8" action="" method="POST"> -->
       <input type="hidden" name="utf8" value="✓">
-    <h3>Let me know when the Beta version is ready!</h3>
-    <div class="try-form">
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="text" name="company" placeholder="Company">
-      <input type="email" name="email" placeholder="Email">
-    </div>
-    <div class="submit-button">
-      <button>Submit</button>
-    </div>
-  </form>
-</section>
+      <h3>Join the Private Beta!</h3>
+      <p>We're actively looking for companies to help test recognized.io. We'd love to personally walk you through our app and hear your feedback.</p>
+      <div class="beta-form-fields">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="company" placeholder="Company">
+        <input type="email" name="email" placeholder="Email">
+      </div>
+      <div class="submit-button">
+        <button>Submit</button>
+      </div>
+    </form>
+  </section>
 
-<footer class="footer">
-  <div class="copyright">2014 Recognized.io All Rights Reserved.</div>
-  <div class="logo-container">
-    <div class="logo">
-      <div class="social">
-        <ul>
-          <li>
-            <%= link_to "https://www.facebook.com/Recognizedio", target: "_blank", class: "icon-facebook", "aria-label" => "Friend us on Facebook" do %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "https://www.twitter.com/recognizedio", target: "_blank", class: "icon-twitter", "aria-label" => "Follow us on Twitter" do %>
-            <% end %>
-          </li>
-        </ul>
+  <footer class="footer">
+    <div class="copyright">2014 Recognized.io All Rights Reserved.</div>
+    <div class="logo-container">
+      <div class="logo">
+        <div class="social">
+          <ul>
+            <li>
+              <%= link_to "https://www.facebook.com/Recognizedio", target: "_blank", class: "icon-facebook", "aria-label" => "Friend us on Facebook" do %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://www.twitter.com/recognizedio", target: "_blank", class: "icon-twitter", "aria-label" => "Follow us on Twitter" do %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>

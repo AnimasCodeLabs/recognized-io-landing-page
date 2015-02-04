@@ -27,6 +27,12 @@ $blue: #0066A3;
     top: 30px;
     left: 30px;
 
+  .blog-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
     @include media($break-large) {
       position: relative;
       margin-left: auto;

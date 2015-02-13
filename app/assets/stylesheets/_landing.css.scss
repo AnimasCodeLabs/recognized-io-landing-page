@@ -27,11 +27,6 @@ $blue: #0066A3;
     top: 30px;
     left: 30px;
 
-  .blog-button {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
 
     @include media($break-large) {
       position: relative;
@@ -39,6 +34,13 @@ $blue: #0066A3;
       margin-right: auto;
       left: 0;
     }
+  }
+
+  .blog-link {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
   }
 
   .banner-text  {

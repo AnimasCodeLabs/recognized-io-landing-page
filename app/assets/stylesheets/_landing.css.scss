@@ -37,15 +37,25 @@ $blue: #0066A3;
   }
 
   .blog-link {
+    @include transition(all .2s ease-in-out);
     position: absolute;
     top: 30px;
     right: 30px;
     color: white;
-    font-size: 26px;
-    font-weight: bold;
+    font-family: $header-font-family;
+    font-size: 20px;
     border: 1px solid white;
     border-radius: 5px;
     padding: 5px 10px;
+
+    &:hover{
+      background-color: white;
+      color: $blue;
+    }
+
+    @include media($break-xsmall){
+      display: none;
+    }
   }
 
   .blog-link-social {

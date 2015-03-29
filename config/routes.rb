@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
   root 'landing#index'
 
-  get "privacy" => "pages#privacy"
-  get "terms_of_service" => "pages#terms_of_service"
+  get "privacy" => "legal#privacy"
+  get "terms_of_service" => "legal#terms_of_service"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -61,17 +61,14 @@
   </section>
 
   <footer class="footer">
-    <div class="copyright">&copy; <%= Time.zone.now.year %> Recognized.io Inc. All Rights Reserved.</div>
+    <div class="copyright">&copy; <%= Time.zone.now.year %> Recognized.io Inc. All Rights Reserved. |
+      <%= link_to "Terms of Service", terms_of_service_path %> |
+      <%= link_to "Privacy Policy", privacy_path %>
+    </div>
     <div class="logo-container">
       <div class="logo">
         <div class="social">
           <ul>
-            <li>
-              <%= link_to "Terms of Service", terms_of_service_path %>
-            </li>
-            <li>
-              <%= link_to "Privacy Policy", privacy_path %>
-            </li>
             <li>
               <%= link_to "https://www.facebook.com/Recognizedio", target: "_blank", class: "icon-facebook", "aria-label" => "Friend us on Facebook" do %>
               <% end %>

@@ -5,339 +5,342 @@ $green: #579A00;
 $orange: #FF9900;
 $blue: #0066A3;
 
-.company-name {
-  color: $green;
-}
+body.landing{
 
-.header {
-  min-height: 600px;
-  background-color: shade($blue, 45%);
-  color: white;
-  background-image: asset-url("header-img.jpg");
-  background-size: cover;
-  padding: 0 30px;
-  background-position: 27% 50%;
-
-  .logo {
-    @include hide-text;
-    @include retina-image(logowithwhitetext, 260px 45px, $asset-pipeline: true);
-    @include size(260px 45px);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-
-
-    @include media($break-large) {
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-    }
+  .company-name {
+    color: $green;
   }
 
-  .blog-link {
-    @include transition(all .2s ease-in-out);
-    position: absolute;
-    top: 30px;
-    right: 30px;
+  .header {
+    min-height: 600px;
+    background-color: shade($blue, 45%);
     color: white;
-    font-family: $header-font-family;
-    font-size: 20px;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px 10px;
+    background-image: asset-url("header-img.jpg");
+    background-size: cover;
+    padding: 0 30px;
+    background-position: 27% 50%;
 
-    &:hover{
-      background-color: white;
-      color: $blue;
-    }
+    .logo {
+      @include hide-text;
+      @include retina-image(logowithwhitetext, 260px 45px, $asset-pipeline: true);
+      @include size(260px 45px);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 30px;
+      left: 30px;
 
-    @include media($break-xsmall){
-      display: none;
-    }
-  }
-
-  .banner-text  {
-    text-align: center;
-    max-width: 825px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-    h2  {
-      padding-top: 200px;
-      padding-bottom: 40px;
-      font-size: 60px;
-      font-weight: 300;
 
       @include media($break-large) {
-        padding-top: 100px;
-      }
-
-      .stripe-logo {
-        display: inline;
         position: relative;
-        top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
       }
     }
 
-    h3  {
-      font-size: 24px;
-    }
-
-    .beta-button  {
-      @extend %button;
-      margin-top: 60px;
-      margin-bottom: 60px;
-      font-size: 18px;
-      border-radius: 3px;
-
-      @include media($break-xsmall) {
-        font-size: 14px;
-      }
-    }
-  }
-}
-
-.common-problem {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  color: $gray;
-  padding: 0 30px;
-
-  .common-problem-text {
-    max-width: 960px;
-    padding-bottom: 60px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    h3  {
-      color: $green;
-      border-bottom: 1px solid $gray;
-      padding-top: 60px;
-      padding-bottom: 25px;
-      margin-bottom: 30px;
-      font-size: 40px;
-      font-weight: 300;
-    }
-
-    h4  {
-      color: $gray;
-      font-size: 32px;
-      font-weight: 300;
-    }
-
-    @include media($break-xxsmall) {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-  }
-}
-
-.trusted-solution {
-  background-color: $light-gray;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-
-  .solution-text  {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 30px;
-    padding-bottom: 200px;
-
-    h3, h4, p{
-      padding-left: 40px;
-      padding-right: 40px;
-
-      @include media($break-xxsmall) {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
-
-    h3  {
-      color: $green;
-      font-size: 40px;
-      font-weight: 300;
-      border-bottom: 1px solid $gray;
-      padding-top: 50px;
-      padding-bottom: 25px;
-    }
-
-    h4  {
-      color: $blue;
-      font-size: 32px;
-      margin-top: 30px;
-      font-weight: 300;
-      margin-bottom: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-
-    }
-
-    .trusted-lower-text{
-      color: $gray;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 750px;
-
-      @include media($break-xxsmall) {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
-  }
-
-  .demo-space {
-    text-align: center;
-    background-color: white;
-    height: 450px;
-    padding: 0 30px;
-
-    .demo-pic-border{
-      background-color: #EDF1F1;
-      padding: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      position: relative;
-      top: -160px;
-    }
-
-    .demo-pic  {
-      border-radius: 15px;
-      display: block;
-    }
-
-    @include media($break-xlarge) {
-      height: 350px;
-    }
-
-    @include media($break-large) {
-      height: 300px;
-    }
-
-    @include media($break-medium) {
-      height: 250px;
-    }
-
-    @include media($break-small-medium) {
-      height: 170px;
-    }
-
-    @include media($break-small) {
-      height: 110px;
-    }
-
-    @include media($break-xsmall) {
-      height: 110px;
-      padding-left: 5px;
-      padding-right: 5px;
-
-    }
-
-    @include media($break-xxsmall) {
-      height: 30px;
-      padding-bottom: 90px;
-    }
-  }
-}
-
-.a-try  {
-  background-color: $orange;
-  text-align: center;
-  padding: 40px;
-
-  #beta-form{
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h3  {
-    color: white;
-    font-size: 40px;
-    margin: 20px 0;
-  }
-
-  p{
-    color: $dark-gray;
-    margin: 20px 0;
-  }
-
-  .beta-form-fields  {
-    padding-top: 10px;
-  }
-
-  .submit-button  {
-    padding-top: 20px;
-  }
-}
-
-.footer {
-  background-color: $light-gray;
-  text-align: center;
-  position: relative;
-  border-top: 10px solid white;
-
-  .copyright {
-    font-size: 12px;
-    position: absolute;
-    left: 30px;
-    bottom: 40px;
-
-    @include media($break-medium) {
-      display: none;
-    }
-  }
-
-  .logo-container  {
-    background-color: white;
-    display: block;
-    @include size(131px 139px);
-    padding: 40px 45px;
-    margin-left: auto;
-    margin-right: auto;
-
-    .logo  {
-      @include retina-image(logonotext, 49px 51px, $asset-pipeline: true);
-      @include size(49px 51px);
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .social {
-    display: block;
-    position: absolute;
-    bottom: 40px;;
-    right: 30px;
-
-    .label{
-      margin-right: 10px;
-    }
-
-    ul,li {
-      display: inline-block;
-      padding-left: 20px;
-    }
-
-    ul{
-      vertical-align: top;
-      position: relative;
-      top: -2px;
-    }
-
-    a {
-      font-size: 24px;
+    .blog-link {
+      @include transition(all .2s ease-in-out);
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: white;
+      font-family: $header-font-family;
+      font-size: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px 10px;
 
       &:hover{
-        color: white;
+        background-color: white;
+        color: $blue;
+      }
+
+      @include media($break-xsmall){
+        display: none;
+      }
+    }
+
+    .banner-text  {
+      text-align: center;
+      max-width: 825px;
+      margin-left: auto;
+      margin-right: auto;
+
+
+      h2  {
+        padding-top: 200px;
+        padding-bottom: 40px;
+        font-size: 60px;
+        font-weight: 300;
+
+        @include media($break-large) {
+          padding-top: 100px;
+        }
+
+        .stripe-logo {
+          display: inline;
+          position: relative;
+          top: 15px;
+        }
+      }
+
+      h3  {
+        font-size: 24px;
+      }
+
+      .beta-button  {
+        @extend %button;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 18px;
+        border-radius: 3px;
+
+        @include media($break-xsmall) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .common-problem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: $gray;
+    padding: 0 30px;
+
+    .common-problem-text {
+      max-width: 960px;
+      padding-bottom: 60px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      h3  {
+        color: $green;
+        border-bottom: 1px solid $gray;
+        padding-top: 60px;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        font-weight: 300;
+      }
+
+      h4  {
+        color: $gray;
+        font-size: 32px;
+        font-weight: 300;
+      }
+
+      @include media($break-xxsmall) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .trusted-solution {
+    background-color: $light-gray;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    .solution-text  {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 30px;
+      padding-bottom: 200px;
+
+      h3, h4, p{
+        padding-left: 40px;
+        padding-right: 40px;
+
+        @include media($break-xxsmall) {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+
+      h3  {
+        color: $green;
+        font-size: 40px;
+        font-weight: 300;
+        border-bottom: 1px solid $gray;
+        padding-top: 50px;
+        padding-bottom: 25px;
+      }
+
+      h4  {
+        color: $blue;
+        font-size: 32px;
+        margin-top: 30px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+      }
+
+      .trusted-lower-text{
+        color: $gray;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 750px;
+
+        @include media($break-xxsmall) {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+
+    .demo-space {
+      text-align: center;
+      background-color: white;
+      height: 450px;
+      padding: 0 30px;
+
+      .demo-pic-border{
+        background-color: #EDF1F1;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        position: relative;
+        top: -160px;
+      }
+
+      .demo-pic  {
+        border-radius: 15px;
+        display: block;
+      }
+
+      @include media($break-xlarge) {
+        height: 350px;
+      }
+
+      @include media($break-large) {
+        height: 300px;
+      }
+
+      @include media($break-medium) {
+        height: 250px;
+      }
+
+      @include media($break-small-medium) {
+        height: 170px;
+      }
+
+      @include media($break-small) {
+        height: 110px;
+      }
+
+      @include media($break-xsmall) {
+        height: 110px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+      }
+
+      @include media($break-xxsmall) {
+        height: 30px;
+        padding-bottom: 90px;
+      }
+    }
+  }
+
+  .a-try  {
+    background-color: $orange;
+    text-align: center;
+    padding: 40px;
+
+    #beta-form{
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3  {
+      color: white;
+      font-size: 40px;
+      margin: 20px 0;
+    }
+
+    p{
+      color: $dark-gray;
+      margin: 20px 0;
+    }
+
+    .beta-form-fields  {
+      padding-top: 10px;
+    }
+
+    .submit-button  {
+      padding-top: 20px;
+    }
+  }
+
+  .footer {
+    background-color: $light-gray;
+    text-align: center;
+    position: relative;
+    border-top: 10px solid white;
+
+    .copyright {
+      font-size: 12px;
+      position: absolute;
+      left: 30px;
+      bottom: 40px;
+
+      @include media($break-medium) {
+        display: none;
+      }
+    }
+
+    .logo-container  {
+      background-color: white;
+      display: block;
+      @include size(131px 139px);
+      padding: 40px 45px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .logo  {
+        @include retina-image(logonotext, 49px 51px, $asset-pipeline: true);
+        @include size(49px 51px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .social {
+      display: block;
+      position: absolute;
+      bottom: 40px;;
+      right: 30px;
+
+      .label{
+        margin-right: 10px;
+      }
+
+      ul,li {
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      ul{
+        vertical-align: top;
+        position: relative;
+        top: -2px;
+      }
+
+      a {
+        font-size: 24px;
+
+        &:hover{
+          color: white;
+        }
       }
     }
   }

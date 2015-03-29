@@ -13,7 +13,8 @@
 
   <%= render 'shared/inspectlet' %>
 </head>
-<body>
+<body class="<%= body_class %>">
+
   <%= yield %>
 
   <%= render 'shared/google_analytics' %>

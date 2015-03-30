@@ -1,4 +1,17 @@
 <% content_for :body_content do %>
+  <header id="legal-header">
+    <%= link_to root_path, class: "logo" do %>
+      <h1>Recognized.io</h1>
+    <% end %>
+
+    <nav>
+      <ul>
+        <li><%= link_to "Terms of Service", terms_of_service_path %></li>
+        <li><%= link_to "Privacy Policy", privacy_path %></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="container">
     <%= content_for?(:legal_content) ? yield(:legal_content) : yield %>
   </div>

@@ -15,7 +15,7 @@
 </head>
 <body class="<%= body_class %>">
 
-  <%= yield %>
+  <%= content_for?(:body_content) ? yield(:body_content): yield %>
 
   <%= render 'shared/google_analytics' %>
 </body>

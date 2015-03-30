@@ -22,14 +22,21 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
-// Colors
+// Bourbon Colors
 $blue: #477DCA;
-$dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+
+// Recognized colors
+$dark-gray: #666666;
+$gray: #999999;
+$light-gray: #EFEFEF;
+$green: #579A00;
+$orange: #FF9900;
+$blue: #0066A3;
+
 
 // Background Color
 $base-background-color: white;

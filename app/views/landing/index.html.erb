@@ -2,7 +2,7 @@
   <div class="logo">
     <%= link_to root_path do %>
       <h1>Recognized.io</h1>
-      <% end %>
+    <% end %>
   </div>
   <%= link_to 'Blog', 'http://blog.recognized.io/', class: "blog-link" %>
   <div class="banner-text">
@@ -45,40 +45,18 @@
 
 <section class="a-try" id="signup">
   <form id="beta-form" accept-charset="UTF-8" action="https://formkeep.com/f/80602264b68e" method="POST">
-    <!-- <form id="beta-form" accept-charset="UTF-8" action="" method="POST"> -->
-      <input type="hidden" name="utf8" value="✓">
-      <h3>Join the Private Beta!</h3>
-      <p>We're actively looking for companies to try out recognized.io. We'd love to personally walk you through our app and hear your feedback.</p>
-      <div class="beta-form-fields">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="text" name="company" placeholder="Company">
-        <input type="email" name="email" placeholder="Email">
-      </div>
-      <div class="submit-button">
-        <button>Submit</button>
-      </div>
-    </form>
-  </section>
+    <input type="hidden" name="utf8" value="✓">
+    <h3>Join the Private Beta!</h3>
+    <p>We're actively looking for companies to try out recognized.io. We'd love to personally walk you through our app and hear your feedback.</p>
+    <div class="beta-form-fields">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="text" name="company" placeholder="Company">
+      <input type="email" name="email" placeholder="Email">
+    </div>
+    <div class="submit-button">
+      <button>Submit</button>
+    </div>
+  </form>
+</section>
 
-  <footer class="footer">
-    <div class="copyright">&copy; <%= Time.zone.now.year %> Recognized.io Inc. All Rights Reserved. |
-      <%= link_to "Terms of Service", terms_of_service_path %> |
-      <%= link_to "Privacy Policy", privacy_path %>
-    </div>
-    <div class="logo-container">
-      <div class="logo">
-        <div class="social">
-          <ul>
-            <li>
-              <%= link_to "https://www.facebook.com/Recognizedio", target: "_blank", class: "icon-facebook", "aria-label" => "Friend us on Facebook" do %>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to "https://www.twitter.com/recognizedio", target: "_blank", class: "icon-twitter", "aria-label" => "Follow us on Twitter" do %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+<%= render 'shared/site_footer' %>

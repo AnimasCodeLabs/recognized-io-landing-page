@@ -1,10 +1,3 @@
-$dark-gray: #666666;
-$gray: #999999;
-$light-gray: #EFEFEF;
-$green: #579A00;
-$orange: #FF9900;
-$blue: #0066A3;
-
 body.landing{
 
   .company-name {
@@ -278,70 +271,6 @@ body.landing{
 
     .submit-button  {
       padding-top: 20px;
-    }
-  }
-
-  .footer {
-    background-color: $light-gray;
-    text-align: center;
-    position: relative;
-    border-top: 10px solid white;
-
-    .copyright {
-      font-size: 12px;
-      position: absolute;
-      left: 30px;
-      bottom: 40px;
-
-      @include media($break-medium) {
-        display: none;
-      }
-    }
-
-    .logo-container  {
-      background-color: white;
-      display: block;
-      @include size(131px 139px);
-      padding: 40px 45px;
-      margin-left: auto;
-      margin-right: auto;
-
-      .logo  {
-        @include retina-image(logonotext, 49px 51px, $asset-pipeline: true);
-        @include size(49px 51px);
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    .social {
-      display: block;
-      position: absolute;
-      bottom: 40px;;
-      right: 30px;
-
-      .label{
-        margin-right: 10px;
-      }
-
-      ul,li {
-        display: inline-block;
-        padding-left: 20px;
-      }
-
-      ul{
-        vertical-align: top;
-        position: relative;
-        top: -2px;
-      }
-
-      a {
-        font-size: 24px;
-
-        &:hover{
-          color: white;
-        }
-      }
     }
   }
 }

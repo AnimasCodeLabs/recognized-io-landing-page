@@ -41,7 +41,7 @@ body.landing{
   }
 
   .bullet-content {
-    margin-left: $icon-bullet-size * 1.4;
+    // margin-left: $icon-bullet-size * 1.4;
     margin-bottom: 2em;
   }
 
@@ -279,7 +279,7 @@ body.landing{
     padding: 0 30px;
 
     .common-problem-text {
-      max-width: 960px;
+      max-width: 1100px;
       padding-bottom: 60px;
       text-align: center;
       margin-left: auto;
@@ -315,7 +315,7 @@ body.landing{
     margin-left: auto;
 
     .solution-text  {
-      max-width: 1200px;
+      max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
       padding: 0 30px;

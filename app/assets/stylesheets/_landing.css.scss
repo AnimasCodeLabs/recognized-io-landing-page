@@ -1,5 +1,159 @@
 body.landing{
 
+  .bullets {
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $icon-bullet-size: 3.5em;
+
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-bottom: $base-line-height;
+  margin: 1em;
+  overflow: auto;
+  padding: 0;
+
+  .bullet {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+  }
+
+  .bullet-icon {
+    background: $action-color;
+    border-radius: 50%;
+    float: left;
+    height: $icon-bullet-size;
+    padding: $icon-bullet-size / 4;
+    width: $icon-bullet-size;
+  }
+
+  .bullet-icon-1 {
+    background: $action-color;
+  }
+
+  .bullet-icon-2 {
+    background: adjust-hue($action-color, -50%);
+  }
+
+  .bullet-icon-3 {
+    background: adjust-hue($action-color, -140%);
+  }
+
+  .bullet-content {
+    margin-left: $icon-bullet-size * 1.4;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    border-bottom: 1px solid transparentize($base-font-color, 0.8);
+    display: inline-block;
+    font-size: $icon-bullet-size / 2.5;
+    margin: 0 0 ($icon-bullet-size / 6) 0;
+    padding-top: $icon-bullet-size / 7;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+  .cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.card {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 80%);
+  $card-header-background: $card-background;
+  $card-margin: 1em;
+  $card-image-hover-opacity: 0.7;
+  $card-image-hover-color: #F8F2B4;
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+
+
+  .card-image {
+    overflow: hidden;
+    height: 0px;
+    max-height: 150px;
+    background-color: $card-image-hover-color;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
+      opacity: $card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
+  }
+}
+
   .company-name {
     color: $green;
   }
@@ -31,7 +185,29 @@ body.landing{
       }
     }
 
-    .blog-link {
+    .signin-link {
+      @include transition(all .2s ease-in-out);
+      position: absolute;
+      top: 30px;
+      right: 130px;
+      color: white;
+      font-family: $header-font-family;
+      font-size: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px 10px;
+
+      &:hover{
+        background-color: white;
+        color: $blue;
+      }
+
+      @include media($break-xsmall){
+        display: none;
+      }
+    }
+
+    .signup-link {
       @include transition(all .2s ease-in-out);
       position: absolute;
       top: 30px;
@@ -139,7 +315,7 @@ body.landing{
     margin-left: auto;
 
     .solution-text  {
-      max-width: 960px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
       padding: 0 30px;
@@ -243,16 +419,10 @@ body.landing{
     }
   }
 
-  .a-try  {
+  .pricing-section  {
     background-color: $orange;
     text-align: center;
     padding: 40px;
-
-    #beta-form{
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
     h3  {
       color: white;
@@ -262,15 +432,50 @@ body.landing{
 
     p{
       color: $dark-gray;
+      max-width: 1200px;
+      margin: 20px 0;
+    }
+  }
+
+  .feature-section  {
+    background-color: $light-gray;
+    text-align: center;
+    padding: 40px;
+
+
+    h3  {
+      color: dark-gray;
+      font-size: 40px;
       margin: 20px 0;
     }
 
-    .beta-form-fields  {
-      padding-top: 10px;
-    }
+    p{
+      color: $dark-gray;
+      margin: 20px 0;
+      max-width: 1200px;
 
-    .submit-button  {
-      padding-top: 20px;
     }
   }
+  .blog-link {
+    @include transition(all .2s ease-in-out);
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: black;
+    font-family: $header-font-family;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:hover{
+      background-color: white;
+      color: $blue;
+    }
+
+    @include media($break-xsmall){
+      display: none;
+    }
+  }
+
 }

@@ -4,13 +4,13 @@
       <h1>Recognized.io</h1>
     <% end %>
   </div>
-  <%= link_to 'Blog', 'http://blog.recognized.io/', class: "blog-link" %>
+  <%= link_to 'Sign In', 'http://app.recognized.io/sign_in', class: "signin-link" %>
+  <%= link_to 'Sign Up', 'http://app.recognized.io/sign_up', class: "signup-link" %>
   <div class="banner-text">
     <h2>Revenue Recognition for <%= image_tag "stripe-logo.png", class: "stripe-logo", alt: "stripe" %></h2>
     <h3>If your SaaS company is using subscription billing, you are most likely
       over reporting your revenue. Find out how to properly recognize your revenue
       by signing up for early access.</h3>
-    <a class="beta-button" href="#signup">Sign up for the Private Beta!</a>
   </div>
 </header>
 
@@ -30,10 +30,29 @@
     <h3>A Trusted Solution</h3>
     <h4>By simply connecting your Stripe account and your accounting platform to <span class="company-name">Recognized.io</span>,
       you will be able to fully automate your revenue accounting.</h4>
+      <br />
     <div class="trusted-lower-text">
-      <p>You will have a fully automated solution to deal with complicated
-        events such as trials, discounts, and plan changes.</p>
+      <h4>Trusted By:</h4>
     </div>
+    <br />
+    <ul class="bullets">
+      <li class="bullet">
+        <div class="bullet-content">
+          <h2>Insight.ly</h2>
+          </div>
+      </li>
+      <li class="bullet">
+        <div class="bullet-content">
+          <h2>Segment</h2>
+        </div>
+      </li>
+      <li class="bullet">
+        <div class="bullet-content">
+          <h2>Nex.to</h2>
+        </div>
+      </li>
+    </ul>
+
   </div>
 
   <div class="demo-space">
@@ -43,20 +62,80 @@
   </div>
 </section>
 
-<section class="a-try" id="signup">
-  <form id="beta-form" accept-charset="UTF-8" action="https://formkeep.com/f/80602264b68e" method="POST">
-    <input type="hidden" name="utf8" value="✓">
-    <h3>Join the Private Beta!</h3>
-    <p>We're actively looking for companies to try out recognized.io. We'd love to personally walk you through our app and hear your feedback.</p>
-    <div class="beta-form-fields">
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="text" name="company" placeholder="Company">
-      <input type="email" name="email" placeholder="Email">
+<section class="feature-section">
+  <h3>Features</h3>
+  <ul class="bullets">
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+" alt="">
     </div>
-    <div class="submit-button">
-      <button>Submit</button>
+    <div class="bullet-content">
+      <h2>Revenue Insights</h2>
+      <p></p>
+      </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
     </div>
-  </form>
+    <div class="bullet-content">
+      <h2>Exportable Reporting</h2>
+      <p></p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Automatically Updates</h2>
+      <ul>
+        <li>Customer Add/Drops</li>
+        <li>Plan Changes</li>
+        <li>Refunds</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+</section>
+
+<section class="pricing-section">
+    <h3>Pricing</h3>
+    <div class="cards">
+  <div class="card">
+    <div class="card-header">
+      Free Plan
+    </div>
+    <div class="card-copy">
+      <ul>
+        <li>Number of previous accounting periods    6 </li>
+        <li>Number of Users   1</li>
+        <li>Downloadable RevRec spreadsheet   No</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Proffessional
+    </div>
+    <div class="card-copy">
+      <ul>
+        <li>Number of previous accounting periods    Unlimited </li>
+        <li>Number of Users   Unlimited</li>
+        <li>Downloadable RevRec spreadsheet   Yes</li>
+      </ul>
+      <p></p>
+      <p>Tier	Active Customers	Price Per Month</p>
+      <p>Startup	Up to 50	$29.00</p>
+      <p>Established	51 - 250	$79.00</p>
+      <p>Growth	251 - 1000	$149.00</p>
+      <p>Scale	1001 - 3000	$249.00</p>
+      <p>Enterprise	Over 3001	Call</p>
+    </div>
+  </div>
+
 </section>
 
 <%= render 'shared/site_footer' %>

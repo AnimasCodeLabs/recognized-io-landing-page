@@ -259,7 +259,7 @@ body.landing{
 
       .beta-button  {
         @extend %button;
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 60px;
         font-size: 18px;
         border-radius: 3px;
@@ -430,13 +430,19 @@ body.landing{
       margin: 20px 0;
     }
 
+    h4  {
+      color: white;
+      font-size: 28px;
+      margin: 20px 0;
+    }
+
     p{
       color: $dark-gray;
       max-width: 1200px;
       margin: 20px 0;
     }
 
-    
+
   }
 
   .feature-section  {
@@ -458,6 +464,16 @@ body.landing{
 
     }
   }
+  .beta-button  {
+    @extend %button;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-radius: 3px;
 
+    @include media($break-xsmall) {
+      font-size: 14px;
+    }
+  }
 
 }

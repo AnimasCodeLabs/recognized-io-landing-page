@@ -37,25 +37,17 @@
     <div class="trusted-lower-text">
       <h4>Trusted By:</h4>
     </div>
-    <br />
-    <ul class="bullets">
-      <li class="bullet">
-        <div class="bullet-content">
-          <%= image_tag("insightly-logo.png", size: "150x70", alt: "insightly-logo") %>
-          </div>
-      </li>
-      <li class="bullet">
-        <div class="bullet-content">
-          <%= image_tag("segmentio-logo.png", size: "150x70", alt: "segment-logo") %>
-        </div>
-      </li>
-      <li class="bullet">
-        <div class="bullet-content">
-          <%= image_tag("nex.to-logo.png", size: "150x70", alt: "nexto-logo") %>
-        </div>
-      </li>
-    </ul>
-
+    <div class="company-grid">
+      <div class="company-logo">
+        <%= image_tag("insightly-logo.png", class: "insightly-logo", alt: "Insightly") %>
+      </div>
+      <div class="company-logo">
+          <%= image_tag("segmentio-logo.png", class: "segment-logo", alt: "Segment") %>
+      </div>
+      <div class="company-logo">
+          <%= image_tag("nex.to-logo.png", class: "nexto-logo", alt: "Nex.to") %>
+      </div>
+    </div>
   </div>
 
   <div class="demo-space">
@@ -101,47 +93,13 @@
 </section>
 
 <section class="pricing-section">
+  <div class="pricing-text">
     <h3>Public Beta</h3>
     <br />
     <h4>Sign up today for immediate access.  Connect your Stripe account and view your last 6 months at no charge.  If you like what you see then upgrade to "Professional" and have unlimited access and exportable spreadsheets.</h4>
     <br />
     <%= link_to "Let's Do This!", 'http://app.recognized.io/sign_up', class: "beta-button" %>
-
-
-    <!-- <div class="cards">
-  <div class="card">
-    <div class="card-header">
-      Free Plan
-    </div>
-    <div class="card-copy">
-      <ul>
-        <li>Number of previous accounting periods    6 </li>
-        <li>Number of Users   1</li>
-        <li>Downloadable RevRec spreadsheet   No</li>
-      </ul>
-    </div>
   </div>
-
-  <div class="card">
-    <div class="card-header">
-      Professional
-    </div>
-    <div class="card-copy">
-      <ul>
-        <li>Number of previous accounting periods    Unlimited </li>
-        <li>Number of Users   Unlimited</li>
-        <li>Downloadable RevRec spreadsheet   Yes</li>
-      </ul>
-      <p></p>
-      <p><strong>Tier</stong> 	<strong>Active Customers</strong>	<strong>Price Per Month</strong></p>
-      <p>Startup	Up to 50	$29.00</p>
-      <p>Established	51 - 250	$79.00</p>
-      <p>Growth	251 - 1000	$149.00</p>
-      <p>Scale	1001 - 3000	$249.00</p>
-      <p>Enterprise	Over 3001	Call</p>
-    </div>
-  </div> -->
-
 </section>
 
 <%= render 'shared/site_footer' %>

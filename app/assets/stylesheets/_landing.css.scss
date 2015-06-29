@@ -363,6 +363,21 @@ body.landing{
           padding-right: 0px;
         }
       }
+
+      .company-grid{
+        max-width: 1100px;
+        @include row;
+      }
+
+      .company-logo{
+        @include span-columns(4);
+        @include omega(3n);
+        text-align: center;
+
+        img{
+          max-height: 70px;
+        }
+      }
     }
 
     .demo-space {
@@ -423,6 +438,12 @@ body.landing{
     background-color: $orange;
     text-align: center;
     padding: 40px;
+
+    .pricing-text{
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     h3  {
       color: white;

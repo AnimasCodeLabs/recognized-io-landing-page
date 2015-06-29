@@ -4,13 +4,16 @@
       <h1>Recognized.io</h1>
     <% end %>
   </div>
-  <%= link_to 'Blog', 'http://blog.recognized.io/', class: "blog-link" %>
+  <%= link_to 'Sign In', 'http://app.recognized.io/sign_in', class: "signin-link" %>
+  <%= link_to 'Sign Up', 'http://app.recognized.io/sign_up', class: "signup-link" %>
   <div class="banner-text">
     <h2>Revenue Recognition for <%= image_tag "stripe-logo.png", class: "stripe-logo", alt: "stripe" %></h2>
-    <h3>If your SaaS company is using subscription billing, you are most likely
-      over reporting your revenue. Find out how to properly recognize your revenue
-      by signing up for early access.</h3>
-    <a class="beta-button" href="#signup">Sign up for the Private Beta!</a>
+    <h3>A new experience in SaaS accounting.</h3>
+    <br />
+    <h3>Defferals are complex and a drain on your team's time.  Let us simplify things for you.</h3>
+    <br />
+    <%= link_to "Sign up for the Public Beta!" , 'http://app.recognized.io/sign_up', class: "beta-button" %>
+
   </div>
 </header>
 
@@ -27,12 +30,23 @@
 
 <section class="trusted-solution">
   <div class="solution-text">
-    <h3>A Trusted Solution</h3>
+    <h3>An Automated Solution</h3>
     <h4>By simply connecting your Stripe account and your accounting platform to <span class="company-name">Recognized.io</span>,
       you will be able to fully automate your revenue accounting.</h4>
+      <br />
     <div class="trusted-lower-text">
-      <p>You will have a fully automated solution to deal with complicated
-        events such as trials, discounts, and plan changes.</p>
+      <h4>Trusted By:</h4>
+    </div>
+    <div class="company-grid">
+      <div class="company-logo">
+        <%= image_tag("insightly-logo.png", class: "insightly-logo", alt: "Insightly") %>
+      </div>
+      <div class="company-logo">
+          <%= image_tag("segmentio-logo.png", class: "segment-logo", alt: "Segment") %>
+      </div>
+      <div class="company-logo">
+          <%= image_tag("nex.to-logo.png", class: "nexto-logo", alt: "Nex.to") %>
+      </div>
     </div>
   </div>
 
@@ -43,20 +57,49 @@
   </div>
 </section>
 
-<section class="a-try" id="signup">
-  <form id="beta-form" accept-charset="UTF-8" action="https://formkeep.com/f/80602264b68e" method="POST">
-    <input type="hidden" name="utf8" value="✓">
-    <h3>Join the Private Beta!</h3>
-    <p>We're actively looking for companies to try out recognized.io. We'd love to personally walk you through our app and hear your feedback.</p>
-    <div class="beta-form-fields">
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="text" name="company" placeholder="Company">
-      <input type="email" name="email" placeholder="Email">
-    </div>
-    <div class="submit-button">
-      <button>Submit</button>
-    </div>
-  </form>
+<section class="feature-section">
+  <h3>Features</h3>
+  <ul class="bullets">
+    <li class="bullet">
+      <div class="bullet-content">
+        <h2>Revenue Insights</h2>
+        <ul>
+          <li>Interactive Overview Graphs</li>
+          <li>Customer Level Reporting</li>
+        </ul>
+      </div>
+    </li>
+    <li class="bullet">
+      <div class="bullet-content">
+        <h2>Exportable Reporting</h2>
+        <ul>
+          <li>Access Data in Familiar Spreadsheet View</li>
+        </ul>
+      </div>
+    </li>
+    <li class="bullet">
+      <div class="bullet-content">
+        <h2>Automatic Updates</h2>
+        <ul>
+          <li>Customer Add/Drops</li>
+          <li>Plan Changes</li>
+          <li>Refunds</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+
+</section>
+
+<section class="pricing-section">
+  <div class="pricing-text">
+    <h3>Public Beta</h3>
+    <br />
+    <h4>Sign up today for immediate access.  Connect your Stripe account and view your last 6 months at no charge.  If you like what you see then upgrade to "Professional" and have unlimited access and exportable spreadsheets.</h4>
+    <br />
+    <%= link_to "Let's Do This!", 'http://app.recognized.io/sign_up', class: "beta-button" %>
+  </div>
 </section>
 
 <%= render 'shared/site_footer' %>

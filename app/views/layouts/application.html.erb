@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Recognized.io | Revenue Recognition for Stripe</title>
-  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1" >
-  <link rel="shortcut icon" href="/favicon.ico?site=recognized&v=1" />
-  <link rel="icon" href="/favicon.ico?site=recognized&v=1" />
-
-  <%= render 'shared/inspectlet' %>
+  <%= render 'application/head_contents' %>
 </head>
 <body class="<%= body_class %>">
 
   <%= content_for?(:body_content) ? yield(:body_content): yield %>
 
-  <%= render 'shared/google_analytics' %>
+  <%= render 'application/google_analytics' %>
 </body>
 </html>
